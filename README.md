@@ -11,7 +11,7 @@ These stacks are core to how LSP functions. By installing these core stacks you 
 - **[LSPStack](packages/cdk/src/lsp-stack.ts)** - defines the main storage mechanisms used for LSP (DynamoDB for report metadata, S3 bucket for photos)
 - **[ReportFinderStack](packages/cdk/src/report-finder-stack.ts)** - checks for new reports on a defined schedule
 
-Looking at the architectual diagram above, the core workflow can be described as:
+Looking at the architectural diagram above, the core workflow can be described as:
 1. EventBridge cron rule triggers `findNewReports` every 15 minutes between 2:00/3:00-5:45/6:45PM (Mountain Times) MON-FRI
 2. `findNewReports` lambda function will login to LSP and check for new reports
 3. New report metadata is stored in a DynamoDB table called `lsp-table`
@@ -69,7 +69,7 @@ $ aws secretsmanager create-secret --name LS_PASSWORD --secret-string SecurePass
 $ aws secretsmanager create-secret --name LS_DOMAIN --secret-string https://sub.domain.com
 ```
 
-> You can define environment variables locally in the `packages/cdk/.env` file or via Github actions secrets. Refer to the `packages/<PACKAGE>/README.md` to figure out what secrets or environment varibales are required for each package.
+> You can define environment variables locally in the `packages/cdk/.env` file or via Github actions secrets. Refer to the `packages/<PACKAGE>/README.md` to figure out what secrets or environment variables are required for each package.
 
 ### CDK
 The following CDK commands need to be run from the `packages/cdk` directory.
