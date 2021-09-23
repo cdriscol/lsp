@@ -1,0 +1,23 @@
+{
+  "name": "@lsp/smsnotification",
+  "version": "1.0.0",
+  "private": "true",
+  "homepage": "https://github.com/cdriscol/little-sunshin#readme",
+  "main": "dist/sms-notification-handler.js",
+  "scripts": {
+    "build": "yarn tsc",
+    "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet --fix"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**"
+    ]
+  },
+  "dependencies": {
+    "@lsp/common": "^1.0.0",
+    "aws-sdk": "^2.991.0",
+    "listify": "^1.0.3",
+    "tslib": "^2.3.1",
+    "twilio": "^3.67.2"
+  }
+}

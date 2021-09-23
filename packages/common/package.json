@@ -1,0 +1,14 @@
+{
+  "name": "@lsp/common",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "yarn tsc",
+    "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet --fix"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.0.0",
+    "tslib": "^2.0.0"
+  }
+}

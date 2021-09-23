@@ -1,0 +1,16 @@
+# Dependency directory
+**/node_modules
+
+**/tsconfig.tsbuildinfo
+
+# OS metadata
+**/.DS_Store
+**/Thumbs.db
+
+# Ignore built ts files
+**/dist/**/*
+**/yarn-error.log
+
+.env
+
+lerna-debug.log

@@ -1,0 +1,7 @@
+{
+    "packages": ["packages/**"],
+    "nohoist": ["**"],
+    "version": "independent",
+    "npmClient": "yarn",
+    "useWorkspaces": true
+}

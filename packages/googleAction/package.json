@@ -1,0 +1,24 @@
+{
+  "name": "@lsp/googleaction",
+  "version": "1.0.0",
+  "private": "true",
+  "homepage": "https://github.com/cdriscol/little-sunshin#readme",
+  "main": "dist/google-action-handler.js",
+  "scripts": {
+    "build": "yarn tsc",
+    "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet --fix"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**"
+    ]
+  },
+  "dependencies": {
+    "@assistant/conversation": "^3.8.1",
+    "@lsp/common": "^1.0.0",
+    "aws-sdk": "^2.991.0",
+    "listify": "^1.0.3",
+    "moment": "^2.29.1",
+    "tslib": "^2.3.1"
+  }
+}

@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "packages\\cdk"
+		},
+		{
+			"path": "packages\\common"
+		},
+		{
+			"path": "packages\\findNewReports"
+		},
+		{
+			"path": "packages\\googleAction"
+		},
+		{
+			"path": "packages\\smsNotification"
+		},
+		{
+			"path": "packages\\uploadGooglePhoto"
+		}
+	],
+	"settings": {}
+}

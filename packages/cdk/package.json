@@ -1,0 +1,40 @@
+{
+  "name": "cdk",
+  "private": "true",
+  "version": "0.1.0",
+  "bin": {
+    "cdk": "dist/cdk-app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet --fix",
+    "local-deploy": "rm -rf cdk.out && lerna run build && yarn cdk deploy LSPStack"
+  },
+  "dependencies": {
+    "@aws-cdk/assert": "^1.123.0",
+    "@aws-cdk/aws-apigateway": "^1.123.0",
+    "@aws-cdk/aws-cloudwatch-actions": "^1.124.0",
+    "@aws-cdk/aws-dynamodb": "^1.123.0",
+    "@aws-cdk/aws-events": "^1.123.0",
+    "@aws-cdk/aws-events-targets": "^1.123.0",
+    "@aws-cdk/aws-lambda": "^1.123.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.123.0",
+    "@aws-cdk/aws-s3": "^1.123.0",
+    "@aws-cdk/aws-s3-notifications": "^1.123.0",
+    "@aws-cdk/aws-sns": "^1.123.0",
+    "@aws-cdk/aws-sns-subscriptions": "^1.123.0",
+    "@aws-cdk/aws-sqs": "1.123.0",
+    "@aws-cdk/core": "1.123.0",
+    "@lsp/findnewreports": "^1.0.0",
+    "@lsp/googleaction": "^1.0.0",
+    "@lsp/smsnotification": "^1.0.0",
+    "@lsp/uploadgooglephoto": "^1.0.0",
+    "aws-cdk": "^1.123.0",
+    "dotenv": "^10.0.0",
+    "googleapis": "^87.0.0",
+    "node-fetch": "^3.0.0",
+    "tslib": "^2.3.1"
+  }
+}
